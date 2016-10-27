@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/demsea/first-sass#readme",
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "grunt": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "node-sass": "^3.10.1"
   }
 }

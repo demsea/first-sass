@@ -1,0 +1,57 @@
+@import 'helpers/vars';
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
+
+
+body {
+	background: $primary-color;
+	margin: 0;
+}
+.content-wrapper {
+	margin: 0 auto;
+	max-width: 70%;
+}
+header {
+	background: $header-color;
+	padding: $primary-padding;
+
+	h1 {
+		@extend %primary-font;
+		font-size: 45px;
+	}
+	h4 {
+		@extend %primary-font;
+		font-size: 20px;
+	}
+}
+.first-container {
+	padding: $primary-padding;
+
+	h3 {
+		@extend %container-font;
+		font-size: 25px;
+	}
+
+	p {
+		@include text-column(2, 5em);
+		@extend %container-font;
+		font-size: 15px;
+	}
+}
+.second-container {
+	@extend %container-flex;
+	@include text-column(3, 4em);
+
+	.unit {
+		@include unit-size(10px 20px, 320px);
+
+		i {
+			color: $icon-color;
+			padding-left: 110px;
+		}
+		p {
+			@extend %container-font;
+			font-size: 14px;
+		}
+	}
+}

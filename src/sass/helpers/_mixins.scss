@@ -1,0 +1,14 @@
+@mixin text-column($quantity, $perc) {
+	-webkit-column-count: $quantity;
+	-moz-column-count: $quantity;
+	column-count: $quantity;
+
+	-webkit-column-gap: $perc;
+	-moz-column-gap: $perc;
+	column-gap: $perc;
+}
+	
+@mixin unit-size($margin, $width) {
+	margin: $margin;
+	max-width: $width;
+}
